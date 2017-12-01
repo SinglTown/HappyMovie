@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeViewController">
+            <connections>
+                <outlet property="headerImageView" destination="KfG-EJ-CAs" id="UAE-PS-7PA"/>
+                <outlet property="meSegmentControl" destination="oX2-Xy-9aM" id="BKT-Lf-zHm"/>
+                <outlet property="meSelfImageView" destination="ONr-qy-Idq" id="txq-e6-qP9"/>
+                <outlet property="userNameLabel" destination="vvL-HQ-gEC" id="i8a-7B-fxo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KfG-EJ-CAs">
+                    <rect key="frame" x="0.0" y="44" width="600" height="150"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.3918317715117865" blue="0.032634658721377718" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="ZlW-6H-Ng7"/>
+                    </constraints>
+                </imageView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oX2-Xy-9aM">
+                    <rect key="frame" x="0.0" y="194" width="600" height="31"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ael-Sr-Zms"/>
+                    </constraints>
+                    <segments>
+                        <segment title="视频"/>
+                        <segment title="图片"/>
+                    </segments>
+                </segmentedControl>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ONr-qy-Idq">
+                    <rect key="frame" x="270" y="74" width="60" height="60"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.78000000000000003" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="fwf-Kp-sA0"/>
+                        <constraint firstAttribute="width" constant="60" id="sdj-g6-8hb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvL-HQ-gEC">
+                    <rect key="frame" x="225" y="144" width="150" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="6e2-YX-Quq"/>
+                        <constraint firstAttribute="height" constant="30" id="ULX-Fv-7zq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ONr-qy-Idq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="15b-TH-WWC"/>
+                <constraint firstItem="oX2-Xy-9aM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1pB-XD-b8A"/>
+                <constraint firstItem="vvL-HQ-gEC" firstAttribute="top" secondItem="ONr-qy-Idq" secondAttribute="bottom" constant="10" id="450-u6-YOo"/>
+                <constraint firstItem="KfG-EJ-CAs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="ArR-v5-P0d"/>
+                <constraint firstAttribute="trailing" secondItem="oX2-Xy-9aM" secondAttribute="trailing" id="Bg7-e0-SFz"/>
+                <constraint firstItem="ONr-qy-Idq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="LtY-Pl-0kM"/>
+                <constraint firstItem="oX2-Xy-9aM" firstAttribute="top" secondItem="KfG-EJ-CAs" secondAttribute="bottom" id="Pzu-lh-OpE"/>
+                <constraint firstItem="KfG-EJ-CAs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TP6-Co-3Zb"/>
+                <constraint firstItem="vvL-HQ-gEC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cAe-16-2iX"/>
+                <constraint firstAttribute="trailing" secondItem="KfG-EJ-CAs" secondAttribute="trailing" id="uDh-ox-hLY"/>
+            </constraints>
+            <point key="canvasLocation" x="324" y="382"/>
+        </view>
+    </objects>
+</document>

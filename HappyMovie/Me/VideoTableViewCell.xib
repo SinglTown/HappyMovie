@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoTableViewCell" rowHeight="246" id="KGk-i7-Jjw" customClass="VideoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="246"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="454" height="245"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WuK-8l-CV9">
+                        <rect key="frame" x="0.0" y="0.0" width="454" height="200"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="xkI-jH-M80"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQl-WC-fCF">
+                        <rect key="frame" x="404" y="205" width="30" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="GIi-BP-BJH"/>
+                            <constraint firstAttribute="height" constant="30" id="h4u-eG-baF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" backgroundImage="iconfont-share6.png">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkT-MZ-kab">
+                        <rect key="frame" x="20" y="205" width="30" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="D1K-c6-pf7"/>
+                            <constraint firstAttribute="width" constant="30" id="qBz-vc-SLK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" backgroundImage="iconfont-shanchu.png">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WuK-8l-CV9" secondAttribute="trailing" id="2oO-dO-VtD"/>
+                    <constraint firstItem="aQl-WC-fCF" firstAttribute="top" secondItem="WuK-8l-CV9" secondAttribute="bottom" constant="5" id="Kvi-mM-Yg6"/>
+                    <constraint firstItem="WuK-8l-CV9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SuE-xM-Rj6"/>
+                    <constraint firstItem="FkT-MZ-kab" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Tz3-pb-qtD"/>
+                    <constraint firstItem="WuK-8l-CV9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bgw-u6-4NX"/>
+                    <constraint firstItem="FkT-MZ-kab" firstAttribute="top" secondItem="WuK-8l-CV9" secondAttribute="bottom" constant="5" id="feU-l4-ILp"/>
+                    <constraint firstAttribute="trailing" secondItem="aQl-WC-fCF" secondAttribute="trailing" constant="20" id="qnc-zH-x6x"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="deleteButton" destination="FkT-MZ-kab" id="Kq6-fF-huF"/>
+                <outlet property="playView" destination="WuK-8l-CV9" id="gDa-fG-5W4"/>
+                <outlet property="shareButton" destination="aQl-WC-fCF" id="set-Jl-M8z"/>
+            </connections>
+            <point key="canvasLocation" x="317" y="365"/>
+        </tableViewCell>
+        <viewController id="o43-Aa-iBe">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="Lys-mw-3dB"/>
+                <viewControllerLayoutGuide type="bottom" id="erU-II-UOM"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="Xh3-dU-qbC">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <animations/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            </view>
+            <point key="canvasLocation" x="439" y="606"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="iconfont-shanchu.png" width="32" height="32"/>
+        <image name="iconfont-share6.png" width="32" height="32"/>
+    </resources>
+</document>

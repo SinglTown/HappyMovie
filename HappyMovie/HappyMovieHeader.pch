@@ -1,0 +1,34 @@
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+// Custom
+#import "SNLoading.h"
+#import "CommonDefine.h"
+
+#endif
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#ifdef DEBUG
+
+#define  ACLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define ACLog(...) {}
+
+#endif
+
+
+
+

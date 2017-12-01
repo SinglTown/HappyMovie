@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ImageCollectionViewCell" reuseIdentifier="ImageCollectionViewCell" id="gTV-IL-0wX" customClass="ImageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="219" height="159"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="219" height="159"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U5P-07-gEB">
+                        <rect key="frame" x="0.0" y="0.0" width="219" height="159"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.79309837392551563" green="1" blue="0.60582776036464736" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="U5P-07-gEB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="86Q-kl-wje"/>
+                <constraint firstAttribute="bottom" secondItem="U5P-07-gEB" secondAttribute="bottom" id="QMZ-bd-3pn"/>
+                <constraint firstAttribute="trailing" secondItem="U5P-07-gEB" secondAttribute="trailing" id="SAn-Ot-hUv"/>
+                <constraint firstItem="U5P-07-gEB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sMK-JS-L84"/>
+            </constraints>
+            <size key="customSize" width="219" height="159"/>
+            <connections>
+                <outlet property="myImageCollectionImageView" destination="U5P-07-gEB" id="T8Z-iH-0JY"/>
+            </connections>
+            <point key="canvasLocation" x="184.5" y="206.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

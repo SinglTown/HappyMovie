@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicViewController">
+            <connections>
+                <outlet property="musicListView" destination="B2b-22-Zew" id="jjB-0i-jqC"/>
+                <outlet property="musicSegment" destination="hmm-9w-QDc" id="R7x-HE-80C"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="MusicViewController" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45v-JC-fz5">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <color key="backgroundColor" red="0.0061828493600000001" green="0.19744318180000001" blue="0.0094384696619999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="jeZ-DL-LJ1"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.0061828493600000001" green="0.19744318180000001" blue="0.0094384696619999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <items>
+                        <navigationItem title="选择配乐" id="gTL-fX-WNS">
+                            <barButtonItem key="leftBarButtonItem" image="iconfont-fanhui.png" id="Ntk-9F-XeY">
+                                <connections>
+                                    <action selector="gobackAction:" destination="-1" id="SRw-wT-ka6"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B2b-22-Zew">
+                    <rect key="frame" x="0.0" y="74" width="600" height="526"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hmm-9w-QDc">
+                    <rect key="frame" x="0.0" y="45" width="600" height="31"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="01G-dd-8fE"/>
+                    </constraints>
+                    <segments>
+                        <segment title="我的音乐"/>
+                        <segment title="本地曲库"/>
+                    </segments>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="B2b-22-Zew" firstAttribute="top" secondItem="hmm-9w-QDc" secondAttribute="bottom" id="11M-5g-Kdf"/>
+                <constraint firstItem="hmm-9w-QDc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7Ku-De-oiG"/>
+                <constraint firstAttribute="trailing" secondItem="B2b-22-Zew" secondAttribute="trailing" id="AUU-Qp-V1E"/>
+                <constraint firstItem="hmm-9w-QDc" firstAttribute="top" secondItem="45v-JC-fz5" secondAttribute="bottom" id="BEl-gb-ZrO"/>
+                <constraint firstItem="B2b-22-Zew" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qq9-ns-WTv"/>
+                <constraint firstItem="45v-JC-fz5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RUi-bz-18p"/>
+                <constraint firstAttribute="bottom" secondItem="B2b-22-Zew" secondAttribute="bottom" id="eKn-qw-p8C"/>
+                <constraint firstAttribute="trailing" secondItem="hmm-9w-QDc" secondAttribute="trailing" id="jR3-7K-b7K"/>
+                <constraint firstAttribute="trailing" secondItem="45v-JC-fz5" secondAttribute="trailing" id="r9f-X7-XoF"/>
+                <constraint firstItem="45v-JC-fz5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uPO-JN-bvA"/>
+            </constraints>
+            <point key="canvasLocation" x="230" y="408"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconfont-fanhui.png" width="32" height="32"/>
+    </resources>
+</document>

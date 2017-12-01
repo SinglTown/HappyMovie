@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreationViewController">
+            <connections>
+                <outlet property="backVideo" destination="VNe-Qf-fW5" id="CdZ-wT-uWg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNe-Qf-fW5">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="620"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VNe-Qf-fW5" secondAttribute="trailing" id="5cV-lK-XK5"/>
+                <constraint firstItem="VNe-Qf-fW5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7Hx-xD-ubg"/>
+                <constraint firstAttribute="bottom" secondItem="VNe-Qf-fW5" secondAttribute="bottom" constant="-20" id="9Ss-of-ayf"/>
+                <constraint firstItem="VNe-Qf-fW5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WxY-Cx-DOZ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

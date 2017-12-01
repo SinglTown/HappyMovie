@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendCodeViewController">
+            <connections>
+                <outlet property="sendPhoneNumberTF" destination="HSu-En-gFo" id="oxt-gH-b7W"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="33cb187e75d8f121eaf63ec46b361903.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="wwt-6U-VU8">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入注册手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HSu-En-gFo">
+                    <rect key="frame" x="50" y="200" width="500" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="3Ie-c0-cUC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWr-bg-l7x">
+                    <rect key="frame" x="50" y="270" width="500" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="IUe-M9-6H6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="获取验证码"/>
+                    <connections>
+                        <action selector="getSecurityCodeButton:" destination="-1" eventType="touchUpInside" id="4DU-Yx-Nxq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wwt-6U-VU8" secondAttribute="trailing" id="5XL-ad-2AP"/>
+                <constraint firstItem="wwt-6U-VU8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Bwz-fk-yNj"/>
+                <constraint firstItem="HSu-En-gFo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="ODK-Dn-LUi"/>
+                <constraint firstAttribute="trailing" secondItem="HSu-En-gFo" secondAttribute="trailing" constant="50" id="PoB-aq-lUS"/>
+                <constraint firstAttribute="bottom" secondItem="wwt-6U-VU8" secondAttribute="bottom" id="XYa-pL-e69"/>
+                <constraint firstAttribute="trailing" secondItem="oWr-bg-l7x" secondAttribute="trailing" constant="50" id="anv-vX-9hz"/>
+                <constraint firstItem="oWr-bg-l7x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="iax-yW-2Gs"/>
+                <constraint firstItem="wwt-6U-VU8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tmh-g4-Hx3"/>
+                <constraint firstItem="HSu-En-gFo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="wqB-3a-kkA"/>
+                <constraint firstItem="oWr-bg-l7x" firstAttribute="top" secondItem="HSu-En-gFo" secondAttribute="bottom" constant="30" id="xyF-ds-sd9"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="33cb187e75d8f121eaf63ec46b361903.jpeg" width="295" height="524"/>
+    </resources>
+</document>
